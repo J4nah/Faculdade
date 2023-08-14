@@ -3,15 +3,15 @@ package Exercicios;
 import java.util.Scanner;
 
 /*
- * Calcule a quantidade de litros de combustiÌvel gasta em uma viagem,
-utilizando um automoÌvel que faz 12 Km por litro. Para obter o
-caÌlculo, o usuaÌrio deve fornecer o tempo gasto na viagem e a
-velocidade meÌdia. Desta forma, seraÌ possiÌvel obter a distaÌ‚ncia
-percorrida com a foÌrmula DISTANCIA = TEMPO * VELOCIDADE. Tendo
-o valor da distaÌ‚ncia, basta calcular a quantidade de litros de
-combustiÌvel utilizada na viagem com a foÌrmula LITROS_USADOS =
+ * Calcule a quantidade de litros de combustivel gasta em uma viagem,
+utilizando um automóvel que faz 12 Km por litro. Para obter o
+calculo, o usuário deve fornecer o tempo gasto na viagem e a
+velocidade média. Desta forma, será possível obter a distância
+percorrida com a fórmula DISTANCIA = TEMPO * VELOCIDADE. Tendo
+o valor da distâ‚ncia, basta calcular a quantidade de litros de
+combustiÌvel utilizada na viagem com a formula LITROS_USADOS =
 DISTANCIA / 12. O programa deve apresentar os valores da
-velocidade meÌdia, tempo gasto, distaÌ‚ncia percorrida e quantidade de
+velocidade média, tempo gasto, distâ‚ncia percorrida e quantidade de
 litros utilizada na viagem. Dica: trabalhe com valores reais.
  */
 public class Exercicio2Aula1 {

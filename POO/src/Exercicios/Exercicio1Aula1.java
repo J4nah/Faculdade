@@ -1,4 +1,7 @@
 package Exercicios;
+
+
+
 /*
  * Um príncipe solicitou os serviços de um alfaiate e disse-lhe que
 pagaria qualquer preço. O alfaiate perguntou ao príncipe se poderia
@@ -13,7 +16,6 @@ public class Exercicio1Aula1 {
 
 	public static void main(String[] args) {
 		
-		System.out.println();
 		
 	}
 	

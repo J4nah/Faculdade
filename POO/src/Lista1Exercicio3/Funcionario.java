@@ -79,11 +79,11 @@ public class Funcionario {
 	public String imprimir() {
 		return "Cracha: " + this.getCracha() + "\nNome: " + this.getNome() + "\nTipo Vínculo: " + this.getTipoVinculo()
 				+ "\nDesconto: " + this.getValorDesconto() + "\nValor a receber: " + calcularValorSalario();
-		if (this.getTipoVinculo().charValue('H')) {
-			return "\nSalário: R$" + this.getValorHora() * this.getQtdeHora();
-		} else {
-			return "\nSalario: R$:" + this.getSalario();
-		}
+//		if () {
+	//		return "\nSalário: R$" + this.getValorHora() * this.getQtdeHora();
+	//	} else {
+//			return "\nSalario: R$:" + this.getSalario();
+	//	}
 	}
 
 	public void menu() {
@@ -131,14 +131,15 @@ public class Funcionario {
 
 					Float inputSalario = Float.parseFloat(JOptionPane.showInputDialog("Informe o Salário: R$"));
 					this.setSalario(inputSalario);
-				}else 			
-			if (selectedItem == "Mostrar Folha de Pagamento") {
+				} else {
+					if (selectedItem == "Mostrar Folha de Pagamento") {
+					}
+				}
+				JOptionPane.showMessageDialog(null, this.imprimir());
 			}
-			JOptionPane.showMessageDialog(null, this.imprimir());
-		}
 
-		selectedItem = JOptionPane.showInputDialog(null, "Escolha um item", "Opção", JOptionPane.INFORMATION_MESSAGE,
-				null, itens, itens[0]);
-	}
+			selectedItem = JOptionPane.showInputDialog(null, "Escolha um item", "Opção",
+					JOptionPane.INFORMATION_MESSAGE, null, itens, itens[0]);
+		}
 	}
 }

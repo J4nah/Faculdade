@@ -74,18 +74,21 @@ public class Funcionario {
 		} else {
 			return (float) Salario - ValorDesconto;
 		}
-			}
-public Float Salarios() {
-	if (TipoVinculo.equals('H')) {
-		return (float) ValorHora * QtdeHora;
-		
-	}else {
-		return (float) Salario;
 	}
-}
+
+	public Float Salarios() {
+		if (TipoVinculo.equals('H')) {
+			return (float) ValorHora * QtdeHora;
+
+		} else {
+			return (float) Salario;
+		}
+	}
+
 	public String imprimir() {
 		return "Cracha: " + this.getCracha() + "\nNome: " + this.getNome() + "\nTipo Vínculo: " + this.getTipoVinculo()
-				+ "\nSalário: " + Salarios() + "\nDesconto: " + this.getValorDesconto() + "\nValor a receber: " + calcularValorSalario();
+				+ "\nSalário: " + Salarios() + "\nDesconto: " + this.getValorDesconto() + "\nValor a receber: "
+				+ calcularValorSalario();
 
 	}
 
@@ -127,9 +130,6 @@ public Float Salarios() {
 			} else {
 				if (selectedItem == "Alterar remuneração") {
 
-					Character inputTipoVinculo = JOptionPane.showInputDialog("Informe Tipo Vinculo: ").charAt(0);
-					this.setTipoVinculo(inputTipoVinculo);
-
 					if (TipoVinculo == 'H') {
 
 						Float inputValorHora = Float
@@ -146,14 +146,15 @@ public Float Salarios() {
 						this.setSalario(inputSalario);
 					}
 
-					Float inputValorDesconto = Float.parseFloat(JOptionPane.showInputDialog("Informe o valor do desconto: R$"));
+					Float inputValorDesconto = Float
+							.parseFloat(JOptionPane.showInputDialog("Informe o valor do desconto: R$"));
 					this.setValorDesconto(inputValorDesconto);
 
 				} else {
 					if (selectedItem == "Mostrar Folha de Pagamento") {
+						JOptionPane.showMessageDialog(null, this.imprimir());
 					}
 				}
-				JOptionPane.showMessageDialog(null, this.imprimir());
 			}
 
 			selectedItem = JOptionPane.showInputDialog(null, "Escolha um item", "Opção",

@@ -63,8 +63,8 @@ public class Pessoa {
 				this.setSexo(inputSexo);
 
 				Integer inputIdade = Integer.parseInt(JOptionPane.showInputDialog("Informe a Idade: "));
-
 				this.setIdade(inputIdade);
+				
 			} else {
 				if (selectedItem == "Mostrar pessoa") {
 					JOptionPane.showMessageDialog(null, this.imprimir());
